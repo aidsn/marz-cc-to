@@ -4,7 +4,7 @@ import { getDefaultProvider } from "@ethersproject/providers";
 import React, { useEffect, useState } from "react";
 
 import { Body, Button, Header, Image, Link } from "./components";
-import logo from "./ethereumLogo.png";
+import logo from "./assets/logo.png";
 import useWeb3Modal from "./hooks/useWeb3Modal";
 
 import { addresses, abis } from "@project/contracts";
@@ -91,7 +91,7 @@ function App() {
           No Fucking Thanks
         </p>
         {/* Remove the "hidden" prop and open the JavaScript console in the browser to see what this function does */}
-        <Button hidden onClick={() => readOnChainData()}>
+        <Button onClick={() => readOnChainData()}>
           Read On-Chain Balance
         </Button>
         <Link href="https://ethereum.org/developers/#getting-started" style={{ marginTop: "8px" }}>
