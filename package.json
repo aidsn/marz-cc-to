@@ -23,5 +23,8 @@
     "packages": [
       "packages/*"
     ]
+  },
+  "dependencies": {
+    "firebase": "^9.6.6"
   }
 }
